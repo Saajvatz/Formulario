@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Comentarios y Reseñas</title>
+    <link rel="stylesheet" href="forCR.css">
+    <link rel="stylesheet" href="forCR.js">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h2>Deja tu Comentario</h2>
+        <form action="#" method="post">
+            <div class="grupo-input">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="grupo-input">
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" class="correo" name="correo" placeholder="Tu correo electrónico" required>
+            </div>
+            <div class="grupo-input">
+                <label for="calificacion">Calificación:</label>
+                <div class="calificacion">
+                    <input type="radio" class="estrella5" name="calificacion" value="5"><label for="estrella5">★</label>
+                    <input type="radio" class="estrella4" name="calificacion" value="4"><label for="estrella4">★</label>
+                    <input type="radio" class="estrella3" name="calificacion" value="3"><label for="estrella3">★</label>
+                    <input type="radio" class="estrella2" name="calificacion" value="2"><label for="estrella2">★</label>
+                    <input type="radio" class="estrella1" name="calificacion" value="1"><label for="estrella1">★</label>
+                </div>
+            </div>
+            <div class="grupo-input">
+                <label for="comentario">Comentario:</label>
+                <textarea class="comentario" name="comentario" rows="4" placeholder="Escribe tu comentario" required></textarea>
+            </div>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </div>
+</body>
+</html>
